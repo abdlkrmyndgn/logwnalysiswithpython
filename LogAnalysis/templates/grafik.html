@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BŞEÜ LOG ANALİZCİSİ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+</head>
+<body style="text-align: center;font-family: 'Teko', sans-serif;min-width: 600px;">
+    <nav style="background-color:brown;height: 100px;margin-top: -20px;margin-left: -15px;margin-right: -8px;">
+        <h1 style="padding-top: 25px;font-size: 30px;">Bilecik Şeyh Edebali Üniversitesi Log Analizcsi</h1>
+    </nav>
+    <h3>Toplam İncelenen Veri Sayısı: {{ veriSayac }}</h3>
+    
+    <img src="{{ url_for('static', filename='images/grafik.png') }}" alt="Grafik" draggable="false">
+</body>
+</html>
