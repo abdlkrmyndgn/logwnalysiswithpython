@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/images/logo.png" type="images/png">
+    <title>Erişim Engellendi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 1.5em; /* Metin boyutunu büyüt */
+            font-weight: bold; /* Kalın font */
+            margin-top: -75px; /* Üst boşluk ekleyerek logolardan ayır */
+            color: brown;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: space-around; /* Logoları sağa sola yerleştir */
+            align-items: center; /* Dikey hizalama */
+            margin-top: 30px; /* Logolar ile metin arasındaki boşluk */
+        }
+        .logo {
+            width: 120px; /* Logo genişliği */
+            height: 110px; /* Otomatik yükseklik ayarı */
+            margin: 30px; /* Logolar arasındaki ve etrafındaki boşluk */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img class="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Resim 1">
+            <img class="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Resim 2">
+        </div>
+        <p>Bu siteye erişmek için yeterli izine sahip değilsiniz.</p>
+    </div>
+</body>
+</html>
